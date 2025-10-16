@@ -13,3 +13,6 @@ participants.tsv
 *.out
 *.err
 .Rhistory
+._.*
+._.
+._*

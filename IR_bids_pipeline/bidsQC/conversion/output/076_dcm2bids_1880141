@@ -1,0 +1,45 @@
+* IRA076 dir exists *
+INFO    | --- dcm2bids start ---
+INFO    | Running the following command: /u/home/c/clarefmc/.conda/envs/dcm2bids/bin/dcm2bids -d /u/project/silvers/data/IR/dicom/IRA076/MAGNETOM_Prisma_Fit_MRC35426/20230614/Silvers_IRA_4ad58936-7d9f-43/ -p IRA076 -c /u/project/silvers/data/bids/IR_bids_pipeline/bidsQC/conversion/study_config.json -o /u/project/silvers/data/bids/IR_bids_pipeline/bids_data --force_dcm2bids
+INFO    | OS version: Linux-3.10.0-1160.95.1.el7.x86_64-x86_64-with-glibc2.17
+INFO    | Python version: 3.12.2 | packaged by conda-forge | (main, Feb 16 2024, 20:50:58) [GCC 12.3.0]
+INFO    | dcm2bids version: 3.1.1
+INFO    | dcm2niix version: v1.0.20240202
+INFO    | Checking for software update
+INFO    | Currently using the latest version of dcm2bids.
+INFO    | Currently using the latest version of dcm2niix.
+INFO    | participant: sub-IRA076
+INFO    | config: /u/project/silvers/data/bids/IR_bids_pipeline/bidsQC/conversion/study_config.json
+INFO    | BIDS directory: /u/project/silvers/data/bids/IR_bids_pipeline/bids_data
+INFO    | Auto extract entities: False
+INFO    | Validate BIDS: False
+
+WARNING | Previous dcm2bids temporary directory output found:
+WARNING | /u/project/silvers/data/bids/IR_bids_pipeline/bids_data/tmp_dcm2bids/sub-IRA076
+WARNING | 'force' argument is set to True
+WARNING | Cleaning the previous directory and running dcm2bids
+INFO    | Running: dcm2niix -b y -ba y -z y -f %3s_%f_%p_%t -o /u/project/silvers/data/bids/IR_bids_pipeline/bids_data/tmp_dcm2bids/sub-IRA076 /u/project/silvers/data/IR/dicom/IRA076/MAGNETOM_Prisma_Fit_MRC35426/20230614/Silvers_IRA_4ad58936-7d9f-43
+Error: Converted 291 of 464 files
+Traceback (most recent call last):
+  File "/u/home/c/clarefmc/.conda/envs/dcm2bids/bin/dcm2bids", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "/u/home/c/clarefmc/.conda/envs/dcm2bids/lib/python3.12/site-packages/dcm2bids/cli/dcm2bids.py", line 125, in main
+    app = Dcm2BidsGen(**vars(args)).run()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/u/home/c/clarefmc/.conda/envs/dcm2bids/lib/python3.12/site-packages/dcm2bids/dcm2bids_gen.py", line 87, in run
+    dcm2niix.run(self.force_dcm2bids)
+  File "/u/home/c/clarefmc/.conda/envs/dcm2bids/lib/python3.12/site-packages/dcm2bids/dcm2niix_gen.py", line 88, in run
+    self.execute()
+  File "/u/home/c/clarefmc/.conda/envs/dcm2bids/lib/python3.12/site-packages/dcm2bids/dcm2niix_gen.py", line 134, in execute
+    output = run_shell_command(cmd)
+             ^^^^^^^^^^^^^^^^^^^^^^
+  File "/u/home/c/clarefmc/.conda/envs/dcm2bids/lib/python3.12/site-packages/dcm2bids/utils/utils.py", line 131, in run_shell_command
+    return check_output(commandLine)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/u/home/c/clarefmc/.conda/envs/dcm2bids/lib/python3.12/subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/u/home/c/clarefmc/.conda/envs/dcm2bids/lib/python3.12/subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['dcm2niix', '-b', 'y', '-ba', 'y', '-z', 'y', '-f', '%3s_%f_%p_%t', '-o', PosixPath('/u/project/silvers/data/bids/IR_bids_pipeline/bids_data/tmp_dcm2bids/sub-IRA076'), PosixPath('/u/project/silvers/data/IR/dicom/IRA076/MAGNETOM_Prisma_Fit_MRC35426/20230614/Silvers_IRA_4ad58936-7d9f-43')]' returned non-zero exit status 8.

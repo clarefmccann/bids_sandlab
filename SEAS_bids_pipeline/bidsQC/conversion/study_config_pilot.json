@@ -1,0 +1,225 @@
+{
+    "descriptions": [
+         {
+            "datatype": "anat",
+            "suffix": "T1w",
+            "criteria": {
+                "SeriesDescription": "MPRAGE",
+                "EchoTime": 0.00248
+            }
+        },
+        {
+            "id": "task_facesSB",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-facesSB",
+            "criteria": {
+                "SeriesDescription": "Faces 2 (single)"
+            },
+            "sidecarChanges": {
+                "TaskName": "facesSB",
+                "Units": "Hz"
+            }
+        },
+        {
+            "id": "task_midSB",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-midSB",
+            "criteria": {
+                "SeriesDescription": "MID 1 (single)"
+            },
+            "sidecarChanges": {
+                "TaskName": "midSB",
+                "Units": "Hz"
+            }
+        },
+        {
+            "id": "task_midSB",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-midSB",
+            "criteria": {
+                "SeriesDescription": "MID (SB)"
+            },
+            "sidecarChanges": {
+                "TaskName": "midSB",
+                "Units": "Hz"
+            }
+        },
+        {
+            "id": "task_faces_dir-AP",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-faces_run-01_dir-AP",
+            "criteria": {
+                "SeriesDescription": "Faces 1 (MB) AP"
+            },
+            "sidecar_changes": {
+                "TaskName": "faces",
+                "Units": "Hz"
+            }
+        },
+        {
+            "id": "task_faces_dir-AP",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-faces_dir-AP",
+            "criteria": {
+                "SeriesDescription": "Faces 1 (MB)"
+            },
+            "sidecar_changes": {
+                "TaskName": "faces",
+                "Units": "Hz"
+            }
+        },
+        {
+            "id": "task_faces_dir-PA",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-faces_run-01_dir-PA",
+            "criteria": {
+                "SeriesDescription": "Faces 1 (MB) PA"
+            },
+            "sidecar_changes": {
+                "TaskName": "faces",
+                "Units": "Hz"
+            }
+        },
+        {
+            "id": "task_mid_dir-AP",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-mid_run-01_dir-AP",
+            "criteria": {
+                "SeriesDescription": "MID 2 (MB) AP"
+            },
+            "sidecar_changes": {
+                "TaskName": "mid",
+                "Units": "Hz"
+            }
+        },
+        {
+            "id": "task_mid_dir-AP",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-mid_dir-AP",
+            "criteria": {
+                "SeriesDescription": "MID 2 (MB)"
+            },
+            "sidecar_changes": {
+                "TaskName": "mid",
+                "Units": "Hz"
+            }
+        },
+        {
+            "id": "task_mid_dir-PA",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-mid_run-01_dir-PA",
+            "criteria": {
+                "SeriesDescription": "MID 2 (MB) PA"
+            },
+            "sidecar_changes": {
+                "TaskName": "mid",
+                "Units": "Hz"
+            }
+        },
+        {
+            "datatype": "fmap",
+            "suffix": "magnitude1",
+            "criteria": {
+                "SidecarFilename": "*e1*",
+                "EchoTime": 0.00481
+            },
+            "sidecar_changes": {
+                "Units": "Hz",
+                "IntendedFor": [
+                 "task_facesSB",
+                 "task_midSB",
+                 "task_faces_dir-AP",
+                 "task_faces_dir-PA",
+                 "task_mid_dir-AP",
+                 "task_mid_dir-PA"
+                ]
+            }
+        },
+        {
+            "datatype": "fmap",
+            "suffix": "magnitude2",
+            "criteria": {
+                "SidecarFilename": "*e2.*",
+                "EchoTime": 0.00727
+            },
+            "sidecar_changes": {
+                "Units": "Hz",
+                "IntendedFor": [
+                 "task_facesSB",
+                 "task_midSB",
+                 "task_faces_dir-AP",
+                 "task_faces_dir-PA",
+                 "task_mid_dir-AP",
+                 "task_mid_dir-PA"
+                ]
+            }
+        },
+        {
+            "datatype": "fmap",
+            "suffix": "phasediff",
+            "criteria": {
+                "SidecarFilename": "*e2_ph*"
+            },
+            "sidecar_changes": {
+                "Units": "Hz",
+                "EchoTime1": 0.00481,
+                "EchoTime2": 0.00727,
+                "IntendedFor": [
+                 "task_facesSB",
+                 "task_midSB",
+                 "task_faces_dir-AP",
+                 "task_faces_dir-PA",
+                 "task_mid_dir-AP",
+                 "task_mid_dir-PA"
+                ]
+           }
+       },
+       {
+            "datatype": "fmap",
+            "suffix": "epi",
+            "custom_entities": "dir-AP",
+            "criteria": {
+                "SeriesDescription": "SpinEchoFieldMap_AP"
+            },
+            "sidecar_changes": {
+                "Units": "Hz",
+                "IntendedFor": [
+                 "task_facesSB",
+                 "task_midSB",
+                 "task_faces_dir-AP",
+                 "task_faces_dir-PA",
+                 "task_mid_dir-AP",
+                 "task_mid_dir-PA"
+                ]
+           }
+       },
+       {
+            "datatype": "fmap",
+            "suffix": "epi",
+            "custom_entities": "dir-PA",
+            "criteria": {
+                "SeriesDescription": "SpinEchoFieldMap_PA"
+            },
+            "sidecar_changes": {
+                "Units": "Hz",
+                "IntendedFor": [
+                 "task_facesSB",
+                 "task_midSB",
+                 "task_faces_dir-AP",
+                 "task_faces_dir-PA",
+                 "task_mid_dir-AP",
+                 "task_mid_dir-PA"
+                ]
+           }
+       }
+    ]
+}

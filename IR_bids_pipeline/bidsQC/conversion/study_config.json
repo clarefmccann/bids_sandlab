@@ -1,0 +1,164 @@
+{
+    "descriptions": [
+        {
+            "datatype": "anat",
+            "suffix": "T1w",
+            "criteria": {
+                "SeriesDescription": "MPRAGE"
+            }
+        },
+        {
+            "id": "task_solo1",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-solo_run-01",
+            "criteria": {
+                "SeriesDescription": "Solo1"
+            },
+            "sidecar_changes": {
+                "TaskName": "solo",
+                "Units": "Hz"
+            }
+        },
+        {
+            "id": "task_solo2",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-solo_run-02",
+            "criteria": {
+                "SeriesDescription": "Solo2"
+            },
+            "sidecar_changes": {
+                "TaskName": "solo",
+                "Units": "Hz"
+            }
+        },
+        {
+            "id": "task_solo3",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-solo_run-03",
+            "criteria": {
+                "SeriesDescription": "Solo3"
+            },
+            "sidecar_changes": {
+                "TaskName": "solo",
+                "Units": "Hz"
+            }
+        },
+        {
+            "id": "task_help1",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-help_run-01",
+            "criteria": {
+                "SeriesDescription": "Help1"
+            },
+            "sidecar_changes": {
+                "TaskName": "help",
+                "Units": "Hz"
+            }
+        },
+        {
+            "id": "task_help2",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-help_run-02",
+            "criteria": {
+                "SeriesDescription": "Help2"
+            },
+            "sidecar_changes": {
+                "TaskName": "help",
+                "Units": "Hz"
+            }
+        },
+        {
+            "id": "task_help3",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-help_run-03",
+            "criteria": {
+                "SeriesDescription": "Help3"
+            },
+            "sidecar_changes": {
+                "TaskName": "help",
+                "Units": "Hz"
+            }
+        },
+        {
+            "id": "task_images",
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-images",
+            "criteria": {
+                "SeriesDescription": "Images"
+            },
+            "sidecar_changes": {
+                "TaskName": "images",
+                "Units": "Hz"
+            }
+        },
+	    {
+            "datatype": "fmap",
+            "suffix": "magnitude1",
+            "criteria": {
+		"SidecarFilename": "*e1*",
+                "EchoTime": 0.00481
+            },
+            "sidecar_changes": {
+                "Units": "Hz",
+                "IntendedFor": [
+                 "task_solo1",
+                 "task_solo2",
+                 "task_solo3",
+                 "task_help1",
+                 "task_help2",
+                 "task_help3",
+                 "task_images"
+                ]
+            }
+        },
+        {
+            "datatype": "fmap",
+            "suffix": "magnitude2",
+       	    "criteria":	{
+                "SidecarFilename": "*e2.*",
+       	       	"EchoTime": 0.00727
+       	    },
+            "sidecar_changes": {
+                "Units": "Hz",
+                "IntendedFor": [
+                 "task_solo1",
+                 "task_solo2",
+                 "task_solo3",
+                 "task_help1",
+                 "task_help2",
+                 "task_help3",
+                 "task_images"
+                ]
+       	    }
+        },
+        {
+            "datatype": "fmap",
+            "suffix": "phasediff",
+            "criteria": {
+                "SidecarFilename": "*e2_ph*"
+            },
+            "sidecar_changes": {
+                "Units": "Hz",
+                "EchoTime1": 0.00481,
+                "EchoTime2": 0.00727,
+                "IntendedFor": [
+                 "task_solo1",
+                 "task_solo2",
+                 "task_solo3",
+                 "task_help1",
+                 "task_help2",
+                 "task_help3",
+                 "task_images"
+                ]
+           }
+       }
+    ]
+}
+

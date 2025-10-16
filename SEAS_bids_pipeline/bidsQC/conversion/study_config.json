@@ -1,0 +1,90 @@
+{
+    "descriptions": [
+         {
+            "datatype": "anat",
+            "suffix": "T1w",
+            "criteria": {
+                "SeriesDescription": "mprage",
+                "EchoTime": 0.00248
+            }
+        },
+        {
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-faces_run-01",
+            "criteria": {
+                "SeriesDescription": "task-faces_run-01"
+            },
+            "sidecarChanges": {
+                "TaskName": "faces"
+            }
+        },
+        {
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-faces_run-02",
+            "criteria": {
+                "SeriesDescription": "task-faces_run-02"
+            },
+            "sidecarChanges": {
+                "TaskName": "faces"
+            }
+        },
+        {
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-faces_run-03",
+            "criteria": {
+                "SeriesDescription": "task-faces_run-03"
+            },
+            "sidecarChanges": {
+                "TaskName": "faces"
+            }
+        },
+        {
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-mid_run-01",
+            "criteria": {
+                "SeriesDescription": "task-mid_run-01"
+            },
+            "sidecarChanges": {
+                "TaskName": "mid"
+            }
+        },
+        {
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-mid_run-02",
+            "criteria": {
+                "SeriesDescription": "task-mid_run-02"
+            },
+            "sidecarChanges": {
+                "TaskName": "mid"
+            }
+        },
+        {
+           "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-movie",
+            "criteria": {
+                "SeriesDescription": "task-movie"
+            },
+            "sidecarChanges": {
+                "TaskName": "movie"
+            }
+        },
+        {
+         "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-rest",
+            "criteria": {
+                "SeriesDescription": "task-rest"
+            },
+            "sidecarChanges": {
+                "TaskName": "rest"
+            }
+        }
+
+    ]
+}

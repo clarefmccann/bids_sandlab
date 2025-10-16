@@ -1,0 +1,108 @@
+{
+    "descriptions": [
+        {
+            "datatype": "anat",
+            "suffix": "T1w",
+            "criteria": {
+                "SeriesDescription": "mprage",
+                "EchoTime": 0.00248
+            }
+        },
+        {
+            "datatype": "anat",
+            "suffix": "T1w",
+            "custom_entities": "acq-NM",
+            "criteria": {
+                "SeriesDescription": "neuromelanin"
+            }
+        },
+        {
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-switch",
+            "criteria": {
+                "SeriesDescription": "task-switch"
+            },
+            "sidecarChanges": {
+                "TaskName": "switch"
+            }
+        },
+        {
+           "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-movie",
+            "criteria": {
+                "SeriesDescription": "task-movie"
+            },
+            "sidecarChanges": {
+                "TaskName": "movie"
+            }
+        },
+        {
+         "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-NBack_run-01",
+            "criteria": {
+                "SeriesDescription": "task-NBack_run-01"
+            },
+            "sidecarChanges": {
+                "TaskName": "NBack"
+            }
+        },
+        {
+         "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-NBack_run-02",
+            "criteria": {
+                "SeriesDescription": "task-NBack_run-02"
+            },
+            "sidecarChanges": {
+                "TaskName": "NBack"
+            }
+        },
+        {
+         "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-NBack_run-03",
+            "criteria": {
+                "SeriesDescription": "task-NBack_run-03"
+            },
+            "sidecarChanges": {
+                "TaskName": "NBack"
+            }
+        },
+        {
+         "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-reward_run-01",
+            "criteria": {
+                "SeriesDescription": "task-reward_run-01"
+            },
+            "sidecarChanges": {
+                "TaskName": "reward"
+            }
+        },
+        {
+         "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-reward_run-02",
+            "criteria": {
+                "SeriesDescription": "task-reward_run-02"
+            },
+            "sidecarChanges": {
+                "TaskName": "reward"
+            }
+        },
+        {
+         "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-rest",
+            "criteria": {
+                "SeriesDescription": "task-rest"
+            },
+            "sidecarChanges": {
+                "TaskName": "rest"
+            }
+        }
+    ]
+}

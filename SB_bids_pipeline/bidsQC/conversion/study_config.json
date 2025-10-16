@@ -1,0 +1,130 @@
+{
+    "descriptions": [
+         {
+            "datatype": "anat",
+            "suffix": "T1w",
+            "criteria": {
+                "SeriesDescription": "T1w_MPR",
+                "EchoTime": 0.00222
+            }
+        },
+        {
+            "datatype": "anat",
+            "suffix": "T1w",
+            "criteria": {
+                "SeriesDescription": "T1w_MPR_unfiltered_ND",
+                "EchoTime": 0.00222
+            }
+        },
+        {
+            "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-rest",
+            "criteria": {
+                "SeriesDescription": "rfMRI_Rest"
+            },
+            "sidecarChanges": {
+                "TaskName": "rest"
+            }
+        },
+        {
+           "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-tgng",
+            "criteria": {
+                "SeriesDescription": "tfMRI_TGNG"
+            },
+            "sidecarChanges": {
+                "TaskName": "tgng"
+            }
+        },
+        {
+         "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-reapp",
+            "criteria": {
+                "SeriesDescription": "tfMRI_Reappraisal"
+            },
+            "sidecarChanges": {
+                "TaskName": "reapp"
+            }
+        },
+        {
+        "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-cond",
+            "criteria": {
+                "SeriesDescription": "tfMRI_Conditioning"
+            }
+        },
+        {
+        "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-flanker",
+            "criteria": {
+                "SeriesDescription": "tfMRI_Flanker"
+            }
+        },
+        {
+        "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-coinflip",
+            "criteria": {
+                "SeriesDescription": "tfMRI_CoinFlip_MB6_AP"
+            }
+        },
+        {
+        "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-present",
+            "criteria": {
+                "SeriesDescription": "tfMRI_ThePresent_MB6_AP"
+            }
+        },
+        {
+        "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-present",
+            "criteria": {
+                "SeriesDescription": "tfMRI_ThePackage_MB6_AP"
+            }
+        },
+        {
+        "datatype": "func",
+            "suffix": "bold",
+            "custom_entities": "task-snackattack",
+            "criteria": {
+                "SeriesDescription": "tfMRI_SnackAttack_MB6_AP"
+            }
+        },
+        {
+        "datatype": "dwi",
+            "suffix": "acq-b0ap",
+            "criteria": {
+                "SeriesDescription": "dMRI_dir98_AP_SBRef"
+                }
+        },
+        {
+        "datatype": "dwi",
+            "suffix": "acq-98ap",
+            "criteria": {
+                "SeriesDescription": "dMRI_dir98_AP"
+                }
+        },
+        {
+        "datatype": "dwi",
+            "suffix": "acq-b0pa",
+            "criteria": {
+                "SeriesDescription": "dMRI_dir98_PA_SBRef"
+                }
+        },
+        {
+        "datatype": "dwi",
+            "suffix": "acq-98pa",
+            "criteria": {
+                "SeriesDescription": "dMRI_dir98_PA"
+            }
+
+        }
+    ]
+}

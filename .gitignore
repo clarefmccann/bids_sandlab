@@ -1,0 +1,15 @@
+bids_data/
+log*/
+__pycache__/
+subject_list.txt
+test_subject_list.txt
+containers/
+participants.tsv
+.DS_Store
+*.csv
+*archive*
+*.tsv
+*.txt
+*.out
+*.err
+.Rhistory
